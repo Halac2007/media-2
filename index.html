@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" id="icon-menu">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+        <div id="overlay"></div>
+        <div id="sidebar">
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" id="icon-menu">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            <div class="bar-logo"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/plo-logo.svg" alt="" /></div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            <div>Trang chủ</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video mới</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video xem nhiều</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Video tin tức</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Nóng hôm nay</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>Phóng sự</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            <div>Thông tin tòa soạn</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <div>Liên hệ</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div>PLO APP</div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div class="img-app"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/app-androi.png?v2" alt="" /></div>
+          </a>
+          <a href="" class="sidebar-item">
+            <div class="img-app"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/app-ios.png?v2" alt="" /></div>
+          </a>
+        </div>
+      </div>
+      <div class="section-header">
+        <div class="main-header">
+          <div class="menu-logo"><img src="https://static-cms-plo.epicdn.me/v4/web/styles/img/plo-logo.svg" alt="" /></div>
+          <div class="header-menu">
+            <a class="menu-link is-active" href="#">Video mới</a>
+            <a class="menu-link notify" href="#">Video xem nhiều</a>
+            <a class="menu-link notify" href="#">Nóng hôm nay</a>
+            <a class="menu-link" href="#">Video tin tức</a>
+            <a class="menu-link" href="#">Phóng sự</a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm" />
+          </div>
+          <div class="header-profile">
+            <div class="dropdown">
+              <div class="notification">
+                <span class="notification-number">3</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-bell"
+                  width="24"
+                  height="24"
+                >
+                  <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"></path>
+                </svg>
+              </div>
+              <div class="notification-container">
+                <div class="noti-content">
+                  <h3>Tin mới</h3>
+                  <div class="list-noti">
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>1</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>2</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>3</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>4</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://plo.vn/dac-xa-tai-trai-giam-xuan-loc-nghen-ngao-ngay-tro-ve-post812896.html">
+                        <p>
+                          <em>5</em> Dự báo thời tiết ngày 2-10: Bão Krathon đổ bộ biển Đông gây mưa lớn nhiều khu vực trên cả nước
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="profile-img"
+              src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="breadcrumb">
+        <div class="cate"><a href="">Video</a></div>
+        <div class="sub-cate">
+          <div class="item"><a href="">Video tin tức</a></div>
+          <div class="item"><a href="">Nóng hôm nay</a></div>
+          <div class="item"><a href="">Phóng sự</a></div>
+        </div>
+      </div>
+
+      <div class="wrapper-video">
+        <div class="wrapper-video-top">
+          <div class="article-video">
+            <iframe
+              width="100%"
+              height="560"
+              src="https://www.youtube.com/embed/FCSKFqKoMwU?si=hPP4dn2km25A-NWz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="box-info">
+            <h1 class="title">Sẽ xử lý trách nhiệm thủ trưởng đơn vị có cán bộ vi phạm nồng độ cồn</h1>
+            <div class="cate-time">
+              <div class="cate"><a href="chuyen-muc.html">Nóng hôm nay</a></div>
+              <div class="timer">5/10/2024 | 07:01</div>
+            </div>
+            <div class="sapo">
+              <p>
+                Bộ Công an sẽ kiên quyết xem xét, xử lý trách nhiệm đối với thủ trưởng đơn vị khi để cán bộ, công nhân, viên chức vi
+                phạm nồng độ cồn khi tham gia giao thông.Thực hiện chỉ đạo của Thủ tướng Chính phủ, Bộ Công an đã chỉ đạo các đơn vị
+                địa phương trong quá trình tuần tra, kiểm soát vi phạm pháp luật về giao thông phải tuân thủ pháp luật và tự tôn pháp
+                luật, không có vùng cấm, không có ngoại lệ.
+              </p>
+              <p class="name-text"><strong>Tác giả:</strong>MINH TRÚC</p>
+            </div>
+            <div class="actions">
+              <div class="button btn-like">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 105.01">
+                  <path
+                    class="cls-1"
+                    d="M4,43.36H32.37a4,4,0,0,1,4,4V101a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V47.39a4,4,0,0,1,4-4ZM62.16,6.3A7.36,7.36,0,0,1,66.23.65,8.14,8.14,0,0,1,71.79.34a15.36,15.36,0,0,1,5.3,2.71A26.21,26.21,0,0,1,86.81,21.9a57.41,57.41,0,0,1-.12,8.35q-.25,2.94-.76,6.15h20.2a21.58,21.58,0,0,1,9.1,2.33,14.7,14.7,0,0,1,5.6,4.92,12.55,12.55,0,0,1,2,7.51,18.1,18.1,0,0,1-1.82,6.93,21.82,21.82,0,0,1,.54,8.38,9.7,9.7,0,0,1-2.78,5.68,25.22,25.22,0,0,1-1.4,9.43,19.81,19.81,0,0,1-4.5,7,28.37,28.37,0,0,1-.9,5A17.3,17.3,0,0,1,109.5,99h0c-3.43,4.84-6.17,4.73-10.51,4.55-.61,0-1.26,0-2.26,0H57.39a19.08,19.08,0,0,1-8.86-1.78,21.13,21.13,0,0,1-7-6.06L41,94V48.15l2-.53c5.08-1.37,9.07-5.71,12.16-10.9a75.8,75.8,0,0,0,7-16.64V6.82l.06-.52Zm6.32-.78a2.15,2.15,0,0,0-1,1.57V20.46l-.12.77a82.31,82.31,0,0,1-7.61,18.24C56.4,45.09,52,49.91,46.37,52.14V93.07A14.6,14.6,0,0,0,50.93,97a14.14,14.14,0,0,0,6.46,1.21H96.73c.7,0,1.61,0,2.47.08,2.57.1,4.2.17,5.94-2.29h0a12.34,12.34,0,0,0,1.71-3.74,24.86,24.86,0,0,0,.79-5l.83-1.77a14.89,14.89,0,0,0,3.9-5.75,21.18,21.18,0,0,0,1-8.67l-.1-1.6,1.36-.84a4.09,4.09,0,0,0,1.64-3,17.44,17.44,0,0,0-.68-7.12l.21-1.94A13.12,13.12,0,0,0,117.51,51a7.29,7.29,0,0,0-1.17-4.38,9.53,9.53,0,0,0-3.59-3.12A16,16,0,0,0,106,41.77H79.51l.6-3.18a85.93,85.93,0,0,0,1.22-8.79,51,51,0,0,0,.13-7.55,20.76,20.76,0,0,0-7.62-15,10.15,10.15,0,0,0-3.41-1.79,3,3,0,0,0-2,0ZM22.64,85.3a5.13,5.13,0,1,1-5.13,5.13,5.13,5.13,0,0,1,5.13-5.13Z"
+                  ></path>
+                </svg>
+                <span>Thích</span>
+              </div>
+              <div class="button btn-share">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 500 511.61"
+                >
+                  <path
+                    fill-rule="nonzero"
+                    d="m265.96 363.22 15.5-101.27c-45.53 4.53-96.07 15.77-138.72 45.89-47.72 33.69-86.32 91.71-98.25 191.8-.87 7.43-7.62 12.75-15.06 11.87-5.73-.68-10.21-4.86-11.55-10.14C7 468.76 1.42 437.95.25 409.03c-3.27-79.4 26.39-144.22 70.18-193.61 43.36-48.92 100.66-82.64 153.32-100.33 20.18-6.8 39.79-11.27 57.77-13.36L266.08 15.9c-1.32-7.34 3.57-14.38 10.91-15.69 4.07-.72 8.04.46 11 2.9l207.1 171.3c5.76 4.77 6.57 13.33 1.8 19.08l-1.54 1.59-207.06 180.39c-5.64 4.92-14.22 4.32-19.14-1.32a13.529 13.529 0 0 1-3.19-10.93z"
+                  ></path>
+                </svg>
+                <span>Chia sẻ</span>
+              </div>
+              <div class="button btn-down">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 122.433 122.88"
+                  enable-background="new 0 0 122.433 122.88"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      points="61.216,122.88 0,59.207 39.403,59.207 39.403,0 83.033,0 83.033,59.207 122.433,59.207 61.216,122.88"
+                    ></polygon>
+                  </g>
+                </svg>
+                <span>Tải xuống</span>
+              </div>
+              <div class="button btn-save">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 122.59 122.88"
+                  style="enable-background: new 0 0 122.59 122.88"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M4.95,0h112.68c2.74,0,4.95,2.22,4.95,4.95v112.97c0,2.74-2.22,4.95-4.95,4.95c-1.37,0-2.61-0.56-3.51-1.46L61.16,75.79 L8.18,121.66c-2.06,1.78-5.18,1.56-6.97-0.5c-0.81-0.93-1.2-2.09-1.2-3.23H0V4.95C0,2.22,2.22,0,4.95,0L4.95,0z M112.68,9.91H9.91 v97.2l47.97-41.54c1.82-1.62,4.61-1.68,6.51-0.04l48.3,41.61V9.91L112.68,9.91z"
+                    ></path>
+                  </g>
+                </svg>
+                <span>Lưu</span>
+              </div>
+            </div>
+            <div class="wrap-detail-cate">
+              <div class="podcast-tag">
+                <div class="article__tag">
+                  <div class="box-heading">
+                    <h3 class="wrap-heading">
+                      <span class="heading">Tag:</span>
+                    </h3>
+                  </div>
+                  <div class="box-content">
+                    <a href="">Vi phạm nồng độ cồn</a>
+                    <a href="">Bộ công an</a>
+                    <a href="">Nồng độ cồn</a>
+                    <a href="">Xử phạt nồng độ cồn</a>
+                  </div>
+                </div>
+              </div>
+              <div class="podcast-comment">
+                <div id="article-comment" class="box-comment article-comment" data-id="705860" data-type="20">
+                  <div id="comment-705860" class="box-comment">
+                    <div class="box-heading">
+                      <h3 class="wrap-heading"><a href="#">Bình luận</a></h3>
+                    </div>
+                    <div class="box-content">
+                      <div class="input wrap-comment">
+                        <textarea
+                          rows="3"
+                          placeholder="Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu"
+                        ></textarea>
+                        <div class="w-100 mt-3 d-flex justify-content-between">
+                          <div class="wrap-login" id="login-comment">
+                            <span>Đăng nhập bằng :</span>
+                            <button class="fb login-fb" rel="facebook"><i class="gg-facebook"></i></button>
+                            <button class="google login-gg" rel="google"><i class="gg-google"></i></button>
+                            <button class="zalo login-zl" rel="zalo"></button>
+                            <button class="mail" id="login-cms"><i class="gg-mail"></i></button> <span>hoặc</span>
+                            <a href="javascript:void(0);" class="register-link" id="signup-cms">Đăng ký</a>
+                          </div>
+                          <button class="btn-Submit btnSubmit">Gửi bình luận</button>
+                        </div>
+                      </div>
+                      <div class="filter-comment" style="display: none">
+                        <div class="total-comment" id="total-comment">0 bình luận</div>
+                        <div class="wrap-select">
+                          <label>sắp xếp theo:</label>
+                          <select id="ddlOrder">
+                            <option value="0">Mới nhất</option>
+                            <option value="1">Hay nhất</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="user"></div>
+                      <button data-page="1" style="display: none" class="btn btn-link btn-lg mt-3 btnMore">XEM THÊM BÌNH LUẬN</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-list-video">
+          <div class="box-list-video">
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-title">
+                <h2><a href="">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</a></h2>
+              </div>
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-more">
+        <section class="page-interested">
+          <div class="box-inter">
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-8-4760.jpg.webp" alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-13-7890.jpg.webp"
+                    alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-8-4760.jpg.webp" alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-8-4760.jpg.webp" alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-6-2453.jpg.webp" alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#">
+                  <img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-14-3483.jpg.webp"
+                    alt=""
+                  />
+                  <div class="icon-container">
+                    <svg
+                      class="video-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                      <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-8-4760.jpg.webp" alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-10-6084.jpg.webp"
+                    alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+            <article class="item-news">
+              <div class="item-news-thumb">
+                <a href="#"
+                  ><img
+                    src="https://image.plo.vn/w2000/Uploaded/2024/wpdhncwqr/2024_09_21/phien-cho-mua-thu-1-12-9082.jpg.webp"
+                    alt=""
+                /></a>
+                <div class="icon-container">
+                  <svg
+                    class="video-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M23 7v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+                    <polygon points="9 8 15 12 9 16 9 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-news-title">Dẹp xe dù, bến cóc để Bến xe Miền Đông mới phát huy hiệu quả</div>
+            </article>
+          </div>
+          <div class="btn-more">
+            <button>Xem thêm</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-info">
+        <div class="rank-1">
+          <div class="wrap-logo">
+            <a href="https://plo.vn" class="logo-1" title="PLO - Báo Pháp Luật TP.HCM"></a>
+            <a
+              href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/plovn-1625727762"
+              class="logo-2"
+              title="Chung nhan Tin Nhiem Mang"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="wrap-text">
+            <p>© Báo điện tử Pháp Luật thành phố Hồ Chí Minh</p>
+            <p>Giấy phép số: 636/GP-BTTTT của Bộ Thông tin và Truyền thông cấp ngày 28-12-2020</p>
+            <p>Cơ quan chủ quản: Ủy ban Nhân dân Thành phố Hồ Chí Minh</p>
+            <p>Tổng biên tập: Mai Ngọc Phước</p>
+            <p>Website: <a href="https://plo.vn" class="plo-link">https://plo.vn</a></p>
+            <p>Pháp Luật TP.HCM giữ bản quyền nội dung trên Website này.</p>
+            <p>Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+          </div>
+        </div>
+        <div class="rank-2">
+          <ul>
+            <li><a href="//datbao.plo.vn/" target="_blank" title="Đặt báo">Đặt báo</a></li>
+            <li><a href="//quangcao.plo.vn/" target="_blank" title="Quảng cáo">Quảng cáo</a></li>
+            <li><a href="https://plo.vn/gop-y.html" title="Bạn đọc góp ý">Bạn đọc góp ý</a></li>
+            <li><a href="https://plo.vn/toa-soan.html" title="Thông tin tòa soạn">Thông tin tòa soạn</a></li>
+            <li><a href="https://plo.vn/e-paper/" target="_blank" rel="nofollow" title="E-Paper">E-Paper</a></li>
+          </ul>
+          <p>Phát hành: (028) 3811 2421</p>
+          <p>Tổng đài: (028)3991 0101 - 3991 4701</p>
+          <p>Tiếp bạn đọc: 0982 000 333 - (028) 39 91 96 13 - Email: <span>bandoc@phapluattp.vn</span></p>
+          <p>Liên hệ TT&amp;QC: (028) 39914669 – Fax: (028) 39914606</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
