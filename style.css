@@ -962,7 +962,7 @@ ul {
     gap: 20px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 429px) {
   iframe {
     height: 260px;
   }
@@ -987,6 +987,7 @@ ul {
   }
   .page-interested .box-inter {
     flex-direction: column;
+    row-gap: 40px;
   }
   .page-interested .box-inter .item-news {
     width: 100%;
@@ -1006,6 +1007,11 @@ ul {
   .notification-container {
     right: 0px;
     width: 300px;
+  }
+  .actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 320px) {
