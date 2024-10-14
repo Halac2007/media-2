@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   background: #212529;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -147,7 +147,7 @@ header {
   position: relative;
 }
 .notify:before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #3a6df0;
   width: 6px;
@@ -293,7 +293,7 @@ header {
 }
 
 .notification-container:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 1px;
   right: 0;
@@ -901,7 +901,11 @@ ul {
   float: right;
   padding: 0px 20px 20px 20px;
 }
-
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .item-news-thumb {
+    width: 380px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   iframe {
     height: 420px;
